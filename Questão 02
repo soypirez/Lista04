@@ -1,0 +1,5 @@
+let nota = parseFloat(prompt("Digite a nota final:"));
+
+// Operador ternário: condição ? valorSeVerdadeiro : valorSeFalso
+let resultado = (nota >= 7) ? "Aprovado" : "Reprovado";
+console.log(resultado);
