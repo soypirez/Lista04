@@ -1,12 +1,13 @@
-let a = parseFloat(prompt("Digite o primeiro número:"));
-let b = parseFloat(prompt("Digite o segundo número:"));
-let c = parseFloat(prompt("Digite o terceiro número:"));
+let usuario = prompt("Digite o nome de usuário:");
+let senha = prompt("Digite a senha:");
 
-// Usamos if/else para comparar os três números
-if (a > b && a > c) {
-    console.log("O maior número é: " + a);
-} else if (b > a && b > c) {
-    console.log("O maior número é: " + b);
+// Credenciais corretas pré-definidas
+const usuarioCorreto = "admin";
+const senhaCorreta = "1234";
+
+// Comparamos os valores digitados com os armazenados
+if (usuario === usuarioCorreto && senha === senhaCorreta) {
+    console.log("Acesso permitido");
 } else {
-    console.log("O maior número é: " + c);
+    console.log("Acesso negado");
 }
