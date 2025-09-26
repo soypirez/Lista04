@@ -1,0 +1,11 @@
+function verificaParImpar(numero) {
+    // Se o resto da divisão por 2 for 0, é par. Senão, é ímpar.
+    if (numero % 2 === 0) {
+        console.log(numero + " é Par");
+    } else {
+        console.log(numero + " é Ímpar");
+    }
+}
+
+let numero = parseInt(prompt("Digite um número:"));
+verificaParImpar(numero);
