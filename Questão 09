@@ -1,0 +1,21 @@
+let tipo = prompt("Digite o tipo de cliente (estudante, aposentado, regular):");
+let preco = parseFloat(prompt("Digite o valor do produto:"));
+let desconto = 0;
+
+// Switch para definir o desconto de acordo com a categoria
+switch (tipo.toLowerCase()) {
+    case "estudante":
+        desconto = 0.5;
+        break;
+    case "aposentado":
+        desconto = 0.3;
+        break;
+    case "regular":
+        desconto = 0;
+        break;
+    default:
+        console.log("Categoria inválida");
+}
+
+let precoFinal = preco - (preco * desconto);
+console.log("Preço final: R$ " + precoFinal.toFixed(2));
