@@ -1,0 +1,12 @@
+let a = parseFloat(prompt("Digite o primeiro número:"));
+let b = parseFloat(prompt("Digite o segundo número:"));
+let c = parseFloat(prompt("Digite o terceiro número:"));
+
+// Usamos if/else para comparar os três números
+if (a > b && a > c) {
+    console.log("O maior número é: " + a);
+} else if (b > a && b > c) {
+    console.log("O maior número é: " + b);
+} else {
+    console.log("O maior número é: " + c);
+}
