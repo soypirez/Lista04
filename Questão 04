@@ -1,0 +1,28 @@
+let n1 = parseFloat(prompt("Digite o primeiro número:"));
+let n2 = parseFloat(prompt("Digite o segundo número:"));
+let operacao = prompt("Digite a operação (+, -, *, /, %):");
+
+// Usamos switch para verificar qual operação o usuário escolheu
+switch (operacao) {
+    case "+":
+        console.log("Resultado: " + (n1 + n2));
+        break;
+    case "-":
+        console.log("Resultado: " + (n1 - n2));
+        break;
+    case "*":
+        console.log("Resultado: " + (n1 * n2));
+        break;
+    case "/":
+        if (n2 !== 0) {
+            console.log("Resultado: " + (n1 / n2));
+        } else {
+            console.log("Erro: divisão por zero!");
+        }
+        break;
+    case "%":
+        console.log("Resultado: " + (n1 % n2));
+        break;
+    default:
+        console.log("Operação inválida!");
+}
